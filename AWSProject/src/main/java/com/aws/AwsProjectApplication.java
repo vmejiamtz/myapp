@@ -23,8 +23,7 @@ public class AwsProjectApplication extends SpringBootServletInitializer
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		Map<String, Object> defaultProperties = new HashMap<String, Object>();
-		String env = System.getProperty("env");
-		defaultProperties.put("spring.config.location", "src/main/resoruces/application.yml");
+		defaultProperties.put("spring.config.location", "src/main/resoruces/application.properties");
 		
 		return application.sources(AwsProjectApplication.class).properties(defaultProperties);
 	}
