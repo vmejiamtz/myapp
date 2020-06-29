@@ -30,8 +30,7 @@ public class AWSController {
 	
 		
 		AWSCredentials credentials = new BasicAWSCredentials(
-				"AKIAVVHBOSNPBWELC6XW", 
-				"6YEj64YL/oCPs3/HFk7g0fkdlycQAunSqeExE1pg");
+				"test", "test");
 		
 		// create a client connection based on credentials
 		AmazonS3 s3client = new AmazonS3Client(credentials);
